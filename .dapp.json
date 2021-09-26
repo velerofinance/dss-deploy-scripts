@@ -210,7 +210,7 @@
     "dss-cdp-manager_f98f641": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_541d81d"
+        "dss-deploy": "dss-deploy_e3d7673"
       },
       "name": "dss-cdp-manager",
       "repo": {
@@ -220,16 +220,16 @@
         "url": "https://github.com/velerofinance/dss-cdp-manager"
       }
     },
-    "dss-cdp-manager_fd94a3f": {
+    "dss-cdp-manager_23ea78b": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
         "dss-deploy": "dss-deploy_8b6d2c1"
       },
       "name": "dss-cdp-manager",
       "repo": {
-        "name": "dss-cdp-manager-fd94a3f",
+        "name": "dss-cdp-manager-23ea78b",
         "ref": "dss-v1.2",
-        "rev": "fd94a3f9593483ccbd61ead286bc9754cb844660",
+        "rev": "23ea78bb448be93733d2c9f482e43f1464e48257",
         "url": "https://github.com/velerofinance/dss-cdp-manager"
       }
     },
@@ -259,7 +259,7 @@
         "url": "https://github.com/velerofinance/dss-deploy-pause-proxy-actions"
       }
     },
-    "dss-deploy_541d81d": {
+    "dss-deploy_e3d7673": {
       "deps": {
         "ds-auth": "ds-auth_1cd1fb0",
         "ds-pause": "ds-pause_a520e36",
@@ -269,9 +269,9 @@
       },
       "name": "dss-deploy",
       "repo": {
-        "name": "dss-deploy-541d81d",
+        "name": "dss-deploy-e3d7673",
         "ref": "HEAD",
-        "rev": "541d81d5f24a90a1d856215e444c4b5a607eaab7",
+        "rev": "e3d7673438905878dc9dc88b907f021a16fbe696",
         "url": "https://github.com/velerofinance/dss-deploy"
       }
     },
@@ -322,7 +322,7 @@
       "deps": {
         "ds-test": "ds-test_0a5da56",
         "ds-weth": "ds-weth_85e964f",
-        "dss-cdp-manager": "dss-cdp-manager_fd94a3f",
+        "dss-cdp-manager": "dss-cdp-manager_23ea78b",
         "dss-gem-joins": "dss-gem-joins_cd0f255",
         "proxy-registry": "proxy-registry_235fec6"
       },
@@ -579,7 +579,6 @@
   },
   "this": {
     "deps": {
-      "dss": "dss_f6dd78f",
       "clipper-mom": "clipper-mom_e4c3e64",
       "ds-chief": "ds-chief_4f5ca80",
       "ds-proxy": "ds-proxy_e17a252",
@@ -589,9 +588,9 @@
       "ds-weth": "ds-weth_85e964f",
       "dsr-manager": "dsr-manager_704de7f",
       "dss-auto-line": "dss-auto-line_772e08e",
-      "dss-cdp-manager": "dss-cdp-manager_fd94a3f",
+      "dss-cdp-manager": "dss-cdp-manager_23ea78b",
       "dss-chain-log": "dss-chain-log_56422f3",
-      "dss-deploy": "dss-deploy_541d81d",
+      "dss-deploy": "dss-deploy_e3d7673",
       "dss-deploy-1_2": "dss-deploy_8b6d2c1",
       "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_5366d3a",
       "dss-flash": "dss-flash_82a02f7",
