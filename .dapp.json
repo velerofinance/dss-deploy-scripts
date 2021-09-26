@@ -1,85 +1,85 @@
 {
   "contracts": {
-    "clipper-mom_3249c7d": {
+    "clipper-mom_e4c3e64": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "clipper-mom",
       "repo": {
-        "name": "clipper-mom-3249c7d",
+        "name": "clipper-mom-e4c3e64",
         "ref": "HEAD",
-        "rev": "3249c7dbecd8529cea0793bbf9773b0eb117887f",
-        "url": "https://github.com/makerdao/clipper-mom"
+        "rev": "e4c3e64df131665464ef59e9b03ad929d56dbe35",
+        "url": "https://github.com/velerofinance/clipper-mom"
       }
     },
-    "ds-auth_a51e7ca": {
+    "ds-auth_1cd1fb0": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-auth",
       "repo": {
-        "name": "ds-auth-a51e7ca",
+        "name": "ds-auth-1cd1fb0",
         "ref": "HEAD",
-        "rev": "a51e7caa1f03eeffed66d67f3b38605e0f1f881d",
-        "url": "https://github.com/dapphub/ds-auth"
+        "rev": "1cd1fb0f6c5c48798d5becd7ac6762dcedd76f5c",
+        "url": "https://github.com/velerofinance/ds-auth"
       }
     },
-    "ds-chief_224b476": {
+    "ds-chief_4f5ca80": {
       "deps": {
-        "ds-roles": "ds-roles_53d5694",
+        "ds-roles": "ds-roles_288cb22",
         "ds-test": "ds-test_0a5da56",
-        "ds-thing": "ds-thing_5865abc",
-        "ds-token": "ds-token_a5e709b"
+        "ds-thing": "ds-thing_b71511b",
+        "ds-token": "ds-token_6c5cdfb"
       },
       "name": "ds-chief",
       "repo": {
-        "name": "ds-chief-224b476",
+        "name": "ds-chief-4f5ca80",
         "ref": "HEAD",
-        "rev": "224b476de95e7fabedb173ddb59fe271a366ff62",
-        "url": "https://github.com/makerdao/ds-chief"
+        "rev": "4f5ca80cf86e52628c1b1c02a0f3a65c2a4c9c7c",
+        "url": "https://github.com/velerofinance/ds-chief"
       }
     },
-    "ds-math_e70a364": {
+    "ds-math_c0bfe9d": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-math",
       "repo": {
-        "name": "ds-math-e70a364",
+        "name": "ds-math-c0bfe9d",
         "ref": "HEAD",
-        "rev": "e70a364787804c1ded9801ed6c27b440a86ebd32",
-        "url": "https://github.com/dapphub/ds-math"
+        "rev": "c0bfe9d6bf77cb06a901ecdd93d0db4864208724",
+        "url": "https://github.com/velerofinance/ds-math"
       }
     },
-    "ds-note_832591b": {
+    "ds-note_726e475": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-note",
       "repo": {
-        "name": "ds-note-832591b",
+        "name": "ds-note-726e475",
         "ref": "HEAD",
-        "rev": "832591b2d7dfb13dd513a72d0ff5a64c23b4e327",
-        "url": "https://github.com/dapphub/ds-note"
+        "rev": "726e4756a8cf2f023a151da666113ff454dbf51e",
+        "url": "https://github.com/velerofinance/ds-note"
       }
     },
-    "ds-pause_5e798dd": {
+    "ds-pause_a520e36": {
       "deps": {
-        "ds-note": "ds-note_832591b",
+        "ds-note": "ds-note_726e475",
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-pause",
       "repo": {
-        "name": "ds-pause-5e798dd",
+        "name": "ds-pause-a520e36",
         "ref": "HEAD",
-        "rev": "5e798dd96bfaac978cd9fe3c0259b486e8afd213",
-        "url": "https://github.com/makerdao/ds-pause"
+        "rev": "a520e36d67e842dfcb721a22bbbb5f0b9f0317af",
+        "url": "https://github.com/velerofinance/ds-pause"
       }
     },
     "ds-proxy_e17a252": {
       "deps": {
-        "ds-auth": "ds-auth_a51e7ca",
-        "ds-note": "ds-note_832591b",
+        "ds-auth": "ds-auth_1cd1fb0",
+        "ds-note": "ds-note_726e475",
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-proxy",
@@ -87,26 +87,26 @@
         "name": "ds-proxy-e17a252",
         "ref": "HEAD",
         "rev": "e17a2526ad5c9877ba925ff25c1119f519b7369b",
-        "url": "https://github.com/dapphub/ds-proxy"
+        "url": "https://github.com/velerofinance/ds-proxy"
       }
     },
-    "ds-roles_53d5694": {
+    "ds-roles_288cb22": {
       "deps": {
-        "ds-auth": "ds-auth_a51e7ca",
+        "ds-auth": "ds-auth_1cd1fb0",
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-roles",
       "repo": {
-        "name": "ds-roles-53d5694",
+        "name": "ds-roles-288cb22",
         "ref": "HEAD",
-        "rev": "53d56949c0f98c9b5909df9c0d95025b67f3bb75",
-        "url": "https://github.com/dapphub/ds-roles"
+        "rev": "288cb2201fa5e49c6574486f1c133c5ef715840d",
+        "url": "https://github.com/velerofinance/ds-roles"
       }
     },
     "ds-stop_27cad71": {
       "deps": {
-        "ds-auth": "ds-auth_a51e7ca",
-        "ds-note": "ds-note_832591b",
+        "ds-auth": "ds-auth_1cd1fb0",
+        "ds-note": "ds-note_726e475",
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-stop",
@@ -114,7 +114,7 @@
         "name": "ds-stop-27cad71",
         "ref": "HEAD",
         "rev": "27cad71111afd06a841915c8fe710a7cd5ac7f99",
-        "url": "https://github.com/dapphub/ds-stop"
+        "url": "https://github.com/velerofinance/ds-stop"
       }
     },
     "ds-test_0a5da56": {
@@ -124,240 +124,254 @@
         "name": "ds-test-0a5da56",
         "ref": "HEAD",
         "rev": "0a5da56b0d65960e6a994d2ec8245e6edd38c248",
-        "url": "https://github.com/dapphub/ds-test"
+        "url": "https://github.com/velerofinance/ds-test"
       }
     },
-    "ds-thing_5865abc": {
+    "ds-thing_b71511b": {
       "deps": {
-        "ds-auth": "ds-auth_a51e7ca",
-        "ds-math": "ds-math_e70a364",
-        "ds-note": "ds-note_832591b",
+        "ds-auth": "ds-auth_1cd1fb0",
+        "ds-math": "ds-math_c0bfe9d",
+        "ds-note": "ds-note_726e475",
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-thing",
       "repo": {
-        "name": "ds-thing-5865abc",
+        "name": "ds-thing-b71511b",
         "ref": "HEAD",
-        "rev": "5865abc83184ab546db4279a038eb3466da4cd6b",
-        "url": "https://github.com/dapphub/ds-thing"
+        "rev": "b71511b0abb448d28463d10acef8b3ffa792c25d",
+        "url": "https://github.com/velerofinance/ds-thing"
       }
     },
-    "ds-token_a5e709b": {
+    "ds-token_6c5cdfb": {
       "deps": {
-        "ds-auth": "ds-auth_a51e7ca",
-        "ds-math": "ds-math_e70a364",
+        "ds-auth": "ds-auth_1cd1fb0",
+        "ds-math": "ds-math_c0bfe9d",
         "ds-test": "ds-test_0a5da56"
       },
       "name": "ds-token",
       "repo": {
-        "name": "ds-token-a5e709b",
+        "name": "ds-token-6c5cdfb",
         "ref": "HEAD",
-        "rev": "a5e709b205383720a3d47c7b234771daf4b58766",
-        "url": "https://github.com/dapphub/ds-token"
+        "rev": "6c5cdfb07fa7a67ba63d6678a7399ce9a423f69b",
+        "url": "https://github.com/velerofinance/ds-token"
       }
     },
     "ds-value_4049ecd": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "ds-thing": "ds-thing_5865abc"
+        "ds-thing": "ds-thing_b71511b"
       },
       "name": "ds-value",
       "repo": {
         "name": "ds-value-4049ecd",
         "ref": "HEAD",
         "rev": "4049ecd2652a39cbab464bb1c2c627985f720f97",
-        "url": "https://github.com/dapphub/ds-value"
+        "url": "https://github.com/velerofinance/ds-value"
       }
     },
-    "ds-weth_95ff6de": {
+    "ds-weth_85e964f": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
         "erc20": "erc20_f322aac"
       },
       "name": "ds-weth",
       "repo": {
-        "name": "ds-weth-95ff6de",
+        "name": "ds-weth-85e964f",
         "ref": "HEAD",
-        "rev": "95ff6de91753b41c9b4c3ae2a2152514e2d29183",
-        "url": "https://github.com/makerdao/ds-weth"
+        "rev": "85e964fbe3a004ff4a01fb9a74fd3c6464ac8da3",
+        "url": "https://github.com/velerofinance/ds-weth"
       }
     },
-    "dsr-manager_6d79bcb": {
+    "dsr-manager_704de7f": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_18e9d69"
+        "dss-deploy": "dss-deploy_541d81d"
       },
       "name": "dsr-manager",
       "repo": {
-        "name": "dsr-manager-6d79bcb",
+        "name": "dsr-manager-704de7f",
         "ref": "HEAD",
-        "rev": "6d79bcb8e64b1cce826e7a8e53fb560d87decdba",
-        "url": "https://github.com/makerdao/dsr-manager"
+        "rev": "704de7fcde37a13d9e1bbbaf7fb30f156bbeea10",
+        "url": "https://github.com/velerofinance/dsr-manager"
       }
     },
-    "dss-auto-line_26ad11b": {
+    "dss-auto-line_772e08e": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "dss-auto-line",
       "repo": {
-        "name": "dss-auto-line-26ad11b",
+        "name": "dss-auto-line-772e08e",
         "ref": "HEAD",
-        "rev": "26ad11bb4b7aff9baff178a23c6dc67beb56daf9",
-        "url": "https://github.com/makerdao/dss-auto-line"
+        "rev": "772e08e77c9ced8b8439a24b86fd6f299e98597a",
+        "url": "https://github.com/velerofinance/dss-auto-line"
       }
     },
-    "dss-cdp-manager_342a1e6": {
+    "dss-cdp-manager_f98f641": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_18e9d69"
+        "dss-deploy": "dss-deploy_541d81d"
       },
       "name": "dss-cdp-manager",
       "repo": {
-        "name": "dss-cdp-manager-342a1e6",
-        "ref": "dss-v1.2",
-        "rev": "342a1e6d8cdb323a536aa0155e0658ea1cad9a6a",
-        "url": "https://github.com/makerdao/dss-cdp-manager"
+        "name": "dss-cdp-manager-f98f641",
+        "ref": "HEAD",
+        "rev": "f98f641ae332b92ed7435e4468e75f11f87c3090",
+        "url": "https://github.com/velerofinance/dss-cdp-manager"
       }
     },
-    "dss-chain-log_1a1131d": {
+    "dss-cdp-manager_fd94a3f": {
+      "deps": {
+        "ds-test": "ds-test_0a5da56",
+        "dss-deploy": "dss-deploy_f41d914"
+      },
+      "name": "dss-cdp-manager",
+      "repo": {
+        "name": "dss-cdp-manager-fd94a3f",
+        "ref": "dss-v1.2",
+        "rev": "fd94a3f9593483ccbd61ead286bc9754cb844660",
+        "url": "https://github.com/velerofinance/dss-cdp-manager"
+      }
+    },
+    "dss-chain-log_56422f3": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "dss-chain-log",
       "repo": {
-        "name": "dss-chain-log-1a1131d",
+        "name": "dss-chain-log-56422f3",
         "ref": "HEAD",
-        "rev": "1a1131d5a6334d2b6a5dbfb3495514462ed528a8",
-        "url": "https://github.com/makerdao/dss-chain-log"
+        "rev": "56422f3cd22bd1a4bb48456772c95ea5ee3ab621",
+        "url": "https://github.com/velerofinance/dss-chain-log"
       }
     },
-    "dss-deploy-pause-proxy-actions_3781fa8": {
+    "dss-deploy-pause-proxy-actions_5366d3a": {
       "deps": {
         "ds-proxy": "ds-proxy_e17a252",
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_18e9d69"
+        "dss-deploy": "dss-deploy_541d81d"
       },
       "name": "dss-deploy-pause-proxy-actions",
       "repo": {
-        "name": "dss-deploy-pause-proxy-actions-3781fa8",
+        "name": "dss-deploy-pause-proxy-actions-5366d3a",
         "ref": "HEAD",
-        "rev": "3781fa882fd051355c3ad578cb53c1b98ae01d4a",
-        "url": "https://github.com/makerdao/dss-deploy-pause-proxy-actions"
+        "rev": "5366d3a3ec5306c6f78e9aca4c5494d2ce40cd11",
+        "url": "https://github.com/velerofinance/dss-deploy-pause-proxy-actions"
       }
     },
-    "dss-deploy_18e9d69": {
+    "dss-deploy_541d81d": {
       "deps": {
-        "ds-auth": "ds-auth_a51e7ca",
-        "ds-pause": "ds-pause_5e798dd",
+        "ds-auth": "ds-auth_1cd1fb0",
+        "ds-pause": "ds-pause_a520e36",
         "ds-test": "ds-test_0a5da56",
-        "dss": "dss_95e7169",
-        "esm": "esm_50525df"
+        "dss": "dss_f6dd78f",
+        "esm": "esm_4a4a8fc"
       },
       "name": "dss-deploy",
       "repo": {
-        "name": "dss-deploy-18e9d69",
+        "name": "dss-deploy-541d81d",
+        "ref": "HEAD",
+        "rev": "541d81d5f24a90a1d856215e444c4b5a607eaab7",
+        "url": "https://github.com/velerofinance/dss-deploy"
+      }
+    },
+    "dss-deploy_f41d914": {
+      "deps": {
+        "ds-auth": "ds-auth_1cd1fb0",
+        "ds-pause": "ds-pause_a520e36",
+        "ds-test": "ds-test_0a5da56",
+        "dss": "dss_fbe9405",
+        "esm": "esm_bf84eda"
+      },
+      "name": "dss-deploy",
+      "repo": {
+        "name": "dss-deploy-f41d914",
         "ref": "v1.2",
-        "rev": "18e9d69e656622bdae6697a514c6b76d1a6241dd",
-        "url": "https://github.com/makerdao/dss-deploy"
+        "rev": "f41d9140d876767ce984d5716e685e6f55d24d2d",
+        "url": "https://github.com/velerofinance/dss-deploy"
       }
     },
-    "dss-deploy_898b76b": {
-      "deps": {
-        "ds-auth": "ds-auth_a51e7ca",
-        "ds-pause": "ds-pause_5e798dd",
-        "ds-test": "ds-test_0a5da56",
-        "dss": "dss_8144130",
-        "esm": "esm_99ec2c1"
-      },
-      "name": "dss-deploy",
-      "repo": {
-        "name": "dss-deploy-898b76b",
-        "ref": "HEAD",
-        "rev": "898b76b63830b99ce410235066a11eac274c45ac",
-        "url": "https://github.com/makerdao/dss-deploy"
-      }
-    },
-    "dss-flash_e19d38a": {
+    "dss-flash_671be9c": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss": "dss_8144130"
+        "dss": "dss_f6dd78f"
       },
       "name": "dss-flash",
       "repo": {
-        "name": "dss-flash-e19d38a",
+        "name": "dss-flash-671be9c",
         "ref": "HEAD",
-        "rev": "e19d38a7a86ee9bb56695ff5298b32aa6dfd084d",
-        "url": "https://github.com/makerdao/dss-flash"
+        "rev": "671be9cc580b8aa8fdc26b85caab34556af515ed",
+        "url": "https://github.com/velerofinance/dss-flash"
       }
     },
-    "dss-gem-joins_266b43a": {
+    "dss-gem-joins_cd0f255": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_18e9d69"
+        "dss-deploy": "dss-deploy_541d81d"
       },
       "name": "dss-gem-joins",
       "repo": {
-        "name": "dss-gem-joins-266b43a",
+        "name": "dss-gem-joins-cd0f255",
         "ref": "dss-v1.2",
-        "rev": "266b43a9cf9463b309af1bbf18ee56d5727f88a5",
-        "url": "https://github.com/makerdao/dss-gem-joins"
+        "rev": "cd0f255f7abd09dd44ddbd6ae3afb885c1721180",
+
+        "url": "https://github.com/velerofinance/dss-gem-joins"
       }
     },
-    "dss-proxy-actions_228f2d5": {
+    "dss-proxy-actions_2ec0e49": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "ds-weth": "ds-weth_95ff6de",
-        "dss-cdp-manager": "dss-cdp-manager_342a1e6",
-        "dss-gem-joins": "dss-gem-joins_266b43a",
-        "proxy-registry": "proxy-registry_aa269ec"
+        "ds-weth": "ds-weth_85e964f",
+        "dss-cdp-manager": "dss-cdp-manager_f98f641",
+        "dss-gem-joins": "dss-gem-joins_cd0f255",
+        "proxy-registry": "proxy-registry_235fec6"
       },
       "name": "dss-proxy-actions",
       "repo": {
-        "name": "dss-proxy-actions-228f2d5",
+        "name": "dss-proxy-actions-2ec0e49",
         "ref": "HEAD",
-        "rev": "228f2d5e8f58cf51da2f70dba753241811b87eb3",
-        "url": "https://github.com/makerdao/dss-proxy-actions"
+        "rev": "2ec0e49322a84df61b51aff8ba506277d0e093c8",
+        "url": "https://github.com/velerofinance/dss-proxy-actions"
       }
     },
-    "dss-vest_cbe7426": {
+    "dss-vest_76bdc7f": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "dss-vest",
       "repo": {
-        "name": "dss-vest-cbe7426",
+        "name": "dss-vest-76bdc7f",
         "ref": "HEAD",
-        "rev": "cbe7426e6bb8c2ae81dd78da5f4be19c53071082",
-        "url": "https://github.com/makerdao/dss-vest"
+        "rev": "76bdc7f3c3f1a0bfc7ad38f5e885bf6451ae9e00",
+        "url": "https://github.com/velerofinance/dss-vest"
       }
     },
-    "dss_8144130": {
+    "dss_f6dd78f": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "ds-token": "ds-token_a5e709b",
+        "ds-token": "ds-token_6c5cdfb",
         "ds-value": "ds-value_4049ecd"
       },
       "name": "dss",
       "repo": {
-        "name": "dss-8144130",
+        "name": "dss-f6dd78f",
         "ref": "HEAD",
-        "rev": "81441305eebb80e2bca39afe33c9ef44446f1fb2",
-        "url": "https://github.com/makerdao/dss"
+        "rev": "f6dd78f96a9e228b7b437087d8ff41fc46673588",
+        "url": "https://github.com/velerofinance/dss"
       }
     },
-    "dss_95e7169": {
+    "dss_fbe9405": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "ds-token": "ds-token_a5e709b",
+        "ds-token": "ds-token_6c5cdfb",
         "ds-value": "ds-value_4049ecd"
       },
       "name": "dss",
       "repo": {
-        "name": "dss-95e7169",
+        "name": "dss-fbe9405",
         "ref": "v1.2",
-        "rev": "95e7169cf85c7dcdf83cae56456dc0dfd8f2c3bf",
-        "url": "https://github.com/makerdao/dss"
+        "rev": "fbe9405dd25e0961ca1f991a770b76fa53afee4d",
+        "url": "https://github.com/velerofinance/dss"
       }
     },
     "erc20_f322aac": {
@@ -367,111 +381,112 @@
         "name": "erc20-f322aac",
         "ref": "HEAD",
         "rev": "f322aaca414db343337814097d2af43214bee96c",
-        "url": "https://github.com/dapphub/erc20"
+        "url": "https://github.com/velerofinance/erc20"
       }
     },
-    "esm_50525df": {
+    "esm_4a4a8fc": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "ds-token": "ds-token_a5e709b"
+        "ds-token": "ds-token_6c5cdfb"
       },
       "name": "esm",
       "repo": {
-        "name": "esm-50525df",
-        "ref": "v1.2",
-        "rev": "50525dfb4fdf9da6bb90ad80058eccd921072b5a",
-        "url": "https://github.com/makerdao/esm"
-      }
-    },
-    "esm_99ec2c1": {
-      "deps": {
-        "ds-test": "ds-test_0a5da56",
-        "ds-token": "ds-token_a5e709b"
-      },
-      "name": "esm",
-      "repo": {
-        "name": "esm-99ec2c1",
+        "name": "esm-4a4a8fc",
         "ref": "HEAD",
-        "rev": "99ec2c15e5d40386abf3b8ab8ad429bd7c28342f",
-        "url": "https://github.com/makerdao/esm"
+        "rev": "4a4a8fcf32784e585353b9d6cd4bc54ee1b637d0",
+        "url": "https://github.com/velerofinance/esm"
       }
     },
-    "flipper-mom_1e879f6": {
+    "esm_bf84eda": {
+      "deps": {
+        "ds-test": "ds-test_0a5da56",
+        "ds-token": "ds-token_6c5cdfb"
+      },
+      "name": "esm",
+      "repo": {
+        "name": "esm-bf84eda",
+        "ref": "v1.2",
+        "rev": "bf84eda147280f27ac8aa5ebadeed18722da1c56",
+        "url": "https://github.com/velerofinance/esm"
+      }
+    },
+    "flipper-mom_a841b5e": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "flipper-mom",
       "repo": {
-        "name": "flipper-mom-1e879f6",
+        "name": "flipper-mom-a841b5e",
         "ref": "HEAD",
-        "rev": "1e879f6ce3cd337edb3285f94140aeb9da9ec74a",
-        "url": "https://github.com/makerdao/flipper-mom"
+        "rev": "a841b5ee2b5cc3e0dc7987c89490e327cf9edd67",
+        "url": "https://github.com/velerofinance/flipper-mom"
       }
     },
-    "ilk-registry_34a354f": {
+
+    "ilk-registry_bde10a0": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
         "ds-value": "ds-value_4049ecd",
-        "dss": "dss_8144130"
+        "dss": "dss_f6dd78f"
       },
       "name": "ilk-registry",
       "repo": {
-        "name": "ilk-registry-34a354f",
+        "name": "ilk-registry-bde10a0",
         "ref": "HEAD",
-        "rev": "34a354f404dd9d895501ad609362d462d5c41134",
-        "url": "https://github.com/makerdao/ilk-registry"
+        "rev": "bde10a085388c1f23715481c1f4d5a562efc2565",
+        "url": "https://github.com/velerofinance/ilk-registry"
       }
     },
-    "median_e54dade": {
+    "median_7b45dd0": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "median",
       "repo": {
-        "name": "median-e54dade",
+        "name": "median-7b45dd0",
         "ref": "HEAD",
-        "rev": "e54dadeaf032fc6fa71046eaa265132b908c903c",
-        "url": "https://github.com/makerdao/median"
+        "rev": "7b45dd0da35b418b62e737078d97318c83116318",
+        "url": "https://github.com/velerofinance/median"
       }
     },
-    "mkr-authority_990745c": {
+    "mkr-authority_73ae327": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "mkr-authority",
       "repo": {
-        "name": "mkr-authority-990745c",
+        "name": "mkr-authority-73ae327",
         "ref": "HEAD",
-        "rev": "990745c75d212fc60b01c55958e12b4168ecef3a",
-        "url": "https://github.com/makerdao/mkr-authority"
+        "rev": "73ae3276dbc5120b2dac02aa71d3992342499c95",
+        "url": "https://github.com/velerofinance/mkr-authority"
       }
     },
-    "multicall_6da161a": {
+    "multicall_61068b8": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "multicall",
       "repo": {
-        "name": "multicall-6da161a",
+        "name": "multicall-61068b8",
         "ref": "HEAD",
-        "rev": "6da161ace777dcac88f8238fc7f35f2f8a08e2d2",
-        "url": "https://github.com/makerdao/multicall"
+        "rev": "61068b871c1ad4a90cfd3eb5a955d72514cbab21",
+        "url": "https://github.com/velerofinance/multicall"
       }
     },
-    "osm-mom_4be0ad1": {
+    "osm-mom_937a540": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "osm": "osm_205724b"
+        "osm": "osm_0c21b15"
       },
       "name": "osm-mom",
       "repo": {
-        "name": "osm-mom-4be0ad1",
+        "name": "osm-mom-937a540",
         "ref": "HEAD",
-        "rev": "4be0ad1bb4ff380c5ca18b3bca5187cfe4e2f6e4",
-        "url": "https://github.com/makerdao/osm-mom"
+        "rev": "937a5404a83d58339f23acfcac7e37bc9eab322e",
+        "url": "https://github.com/velerofinance/osm-mom"
       }
     },
-    "osm_205724b": {
+    "osm_0c21b15": {
       "deps": {
         "ds-stop": "ds-stop_27cad71",
         "ds-test": "ds-test_0a5da56",
@@ -479,121 +494,121 @@
       },
       "name": "osm",
       "repo": {
-        "name": "osm-205724b",
+        "name": "osm-0c21b15",
         "ref": "HEAD",
-        "rev": "205724b77f57d33e41c6349bfae849bd8f22f2f9",
-        "url": "https://github.com/makerdao/osm"
+        "rev": "0c21b15865e70cac3f908eaa42ba3be1f83346f2",
+        "url": "https://github.com/velerofinance/osm"
       }
     },
-    "proxy-registry_aa269ec": {
+    "proxy-registry_235fec6": {
       "deps": {
         "ds-proxy": "ds-proxy_e17a252",
         "ds-test": "ds-test_0a5da56"
       },
       "name": "proxy-registry",
       "repo": {
-        "name": "proxy-registry-aa269ec",
+        "name": "proxy-registry-235fec6",
         "ref": "HEAD",
-        "rev": "aa269ec522f9a6138ee93455b27f0518a82d8b83",
-        "url": "https://github.com/makerdao/proxy-registry"
+        "rev": "235fec6aa6635402e234ea388cfd05e203d55692",
+        "url": "https://github.com/velerofinance/proxy-registry"
       }
     },
-    "symbolic-voting_5f9c56f": {
+    "symbolic-voting_b534685": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "symbolic-voting",
       "repo": {
-        "name": "symbolic-voting-5f9c56f",
+        "name": "symbolic-voting-b534685",
         "ref": "HEAD",
-        "rev": "5f9c56f0a2109b36cae14e66d78eadd7125fd1e3",
-        "url": "https://github.com/makerdao/symbolic-voting"
+        "rev": "b534685296f05d18e816960bc04d5539744a4666",
+        "url": "https://github.com/velerofinance/symbolic-voting"
       }
     },
-    "testchain-medians_8b07b03": {
+    "testchain-medians_2183a3f": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "median": "median_e54dade"
+        "median": "median_7b45dd0"
       },
       "name": "testchain-medians",
       "repo": {
-        "name": "testchain-medians-8b07b03",
+        "name": "testchain-medians-2183a3f",
         "ref": "HEAD",
-        "rev": "8b07b039e22e219e7343547df4259334b3b0c3fb",
-        "url": "https://github.com/makerdao/testchain-medians"
+        "rev": "2183a3f1b9604b3773ee538e3c3cbaea949e54e0",
+        "url": "https://github.com/velerofinance/testchain-medians"
       }
     },
-    "token-faucet_1b9ba21": {
+    "token-faucet_ad1f018": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "ds-token": "ds-token_a5e709b"
+        "ds-token": "ds-token_6c5cdfb"
       },
       "name": "token-faucet",
       "repo": {
-        "name": "token-faucet-1b9ba21",
+        "name": "token-faucet-ad1f018",
         "ref": "HEAD",
-        "rev": "1b9ba21fe9c24a3d21979dd47ed75234b652cdc1",
-        "url": "https://github.com/makerdao/token-faucet"
+        "rev": "ad1f01801005903676ea5d32665a96820795a066",
+        "url": "https://github.com/velerofinance/token-faucet"
       }
     },
-    "vote-delegate_c2345b7": {
+    "vote-delegate_afb5309": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "vote-delegate",
       "repo": {
-        "name": "vote-delegate-c2345b7",
+        "name": "vote-delegate-afb5309",
         "ref": "HEAD",
-        "rev": "c2345b78376d5b0bb24749a97f82fe9171b53394",
-        "url": "https://github.com/makerdao/vote-delegate"
+        "rev": "afb530933c468dd862160914d150686551377345",
+        "url": "https://github.com/velerofinance/vote-delegate"
       }
     },
-    "vote-proxy_554c58d": {
+    "vote-proxy_4294745": {
       "deps": {
-        "ds-chief": "ds-chief_224b476",
+        "ds-chief": "ds-chief_4f5ca80",
         "ds-test": "ds-test_0a5da56"
       },
       "name": "vote-proxy",
       "repo": {
-        "name": "vote-proxy-554c58d",
+        "name": "vote-proxy-4294745",
         "ref": "HEAD",
-        "rev": "554c58da7e3cab522d44137ad596a3e5d88a4000",
-        "url": "https://github.com/makerdao/vote-proxy"
+        "rev": "4294745d5c22f81c7e2574f6a8f08d3cdd8a08b3",
+        "url": "https://github.com/velerofinance/vote-proxy"
       }
     }
   },
   "this": {
     "deps": {
-      "clipper-mom": "clipper-mom_3249c7d",
-      "ds-chief": "ds-chief_224b476",
+      "clipper-mom": "clipper-mom_e4c3e64",
+      "ds-chief": "ds-chief_4f5ca80",
       "ds-proxy": "ds-proxy_e17a252",
-      "ds-roles": "ds-roles_53d5694",
-      "ds-token": "ds-token_a5e709b",
+      "ds-roles": "ds-roles_288cb22",
+      "ds-token": "ds-token_6c5cdfb",
       "ds-value": "ds-value_4049ecd",
-      "ds-weth": "ds-weth_95ff6de",
-      "dsr-manager": "dsr-manager_6d79bcb",
-      "dss-auto-line": "dss-auto-line_26ad11b",
-      "dss-cdp-manager": "dss-cdp-manager_342a1e6",
-      "dss-chain-log": "dss-chain-log_1a1131d",
-      "dss-deploy": "dss-deploy_898b76b",
-      "dss-deploy-1_2": "dss-deploy_18e9d69",
-      "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_3781fa8",
-      "dss-flash": "dss-flash_e19d38a",
-      "dss-gem-joins": "dss-gem-joins_266b43a",
-      "dss-proxy-actions": "dss-proxy-actions_228f2d5",
-      "dss-vest": "dss-vest_cbe7426",
-      "flipper-mom": "flipper-mom_1e879f6",
-      "ilk-registry": "ilk-registry_34a354f",
-      "mkr-authority": "mkr-authority_990745c",
-      "multicall": "multicall_6da161a",
-      "osm": "osm_205724b",
-      "osm-mom": "osm-mom_4be0ad1",
-      "proxy-registry": "proxy-registry_aa269ec",
-      "symbolic-voting": "symbolic-voting_5f9c56f",
-      "testchain-medians": "testchain-medians_8b07b03",
-      "token-faucet": "token-faucet_1b9ba21",
-      "vote-delegate": "vote-delegate_c2345b7",
-      "vote-proxy": "vote-proxy_554c58d"
+      "ds-weth": "ds-weth_85e964f",
+      "dsr-manager": "dsr-manager_704de7f",
+      "dss-auto-line": "dss-auto-line_772e08e",
+      "dss-cdp-manager": "dss-cdp-manager_f98f641",
+      "dss-chain-log": "dss-chain-log_56422f3",
+      "dss-deploy": "dss-deploy_541d81d",
+      "dss-deploy-1_2": "dss-deploy_f41d914",
+      "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_5366d3a",
+      "dss-flash": "dss-flash_671be9c",
+      "dss-gem-joins": "dss-gem-joins_cd0f255",
+      "dss-proxy-actions": "dss-proxy-actions_2ec0e49",
+      "dss-vest": "dss-vest_76bdc7f",
+      "flipper-mom": "flipper-mom_a841b5e",
+      "ilk-registry": "ilk-registry_bde10a0",
+      "mkr-authority": "mkr-authority_73ae327",
+      "multicall": "multicall_61068b8",
+      "osm": "osm_0c21b15",
+      "osm-mom": "osm-mom_937a540",
+      "proxy-registry": "proxy-registry_235fec6",
+      "symbolic-voting": "symbolic-voting_b534685",
+      "testchain-medians": "testchain-medians_2183a3f",
+      "token-faucet": "token-faucet_ad1f018",
+      "vote-delegate": "vote-delegate_afb5309",
+      "vote-proxy": "vote-proxy_4294745"
     },
     "name": "dss-deploy-scripts"
   },

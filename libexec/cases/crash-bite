@@ -34,7 +34,7 @@ sethSend "$CDP_MANAGER" 'open(bytes32,address)' "$(seth --to-bytes32 "$(seth --f
 ID=$(seth call "$CDP_MANAGER" 'cdpi()(uint256)')
 URN=$(seth call "$CDP_MANAGER" 'urns(uint256)(address)' "$ID")
 
-if [[ "${token}" == "ETH" ]]; then
+if [[ "${token}" == "VLX" ]]; then
     sethSend "$ETH" 'deposit()' --value "$(seth --to-wei 5 ETH)"
 fi
 

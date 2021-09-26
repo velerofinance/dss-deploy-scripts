@@ -25,8 +25,8 @@ JUG_FABtx=$(dappCreate dss-deploy-1_2 JugFab)
 VOW_FABtx=$(dappCreate dss-deploy-1_2 VowFab)
 CAT_FABtx=$(dappCreate dss-deploy-1_2 CatFab)
 DOG_FABtx=$(dappCreate dss-deploy DogFab)
-DAI_FABtx=$(dappCreate dss-deploy-1_2 DaiFab)
-MCD_JOIN_DAI_FABtx=$(dappCreate dss-deploy-1_2 DaiJoinFab)
+USDV_FABtx=$(dappCreate dss-deploy-1_2 USDVFab)
+MCD_JOIN_USDV_FABtx=$(dappCreate dss-deploy-1_2 UsdvJoinFab)
 FLAP_FABtx=$(dappCreate dss-deploy-1_2 FlapFab)
 FLOP_FABtx=$(dappCreate dss-deploy-1_2 FlopFab)
 FLIP_FABtx=$(dappCreate dss-deploy-1_2 FlipFab)
@@ -45,8 +45,8 @@ test "$(seth receipt "$JUG_FABtx" status)" -eq 0 && exit 1
 test "$(seth receipt "$VOW_FABtx" status)" -eq 0 && exit 1
 test "$(seth receipt "$CAT_FABtx" status)" -eq 0 && exit 1
 test "$(seth receipt "$DOG_FABtx" status)" -eq 0 && exit 1
-test "$(seth receipt "$DAI_FABtx" status)" -eq 0 && exit 1
-test "$(seth receipt "$MCD_JOIN_DAI_FABtx" status)" -eq 0 && exit 1
+test "$(seth receipt "$USDV_FABtx" status)" -eq 0 && exit 1
+test "$(seth receipt "$MCD_JOIN_USDV_FABtx" status)" -eq 0 && exit 1
 test "$(seth receipt "$FLAP_FABtx" status)" -eq 0 && exit 1
 test "$(seth receipt "$FLOP_FABtx" status)" -eq 0 && exit 1
 test "$(seth receipt "$FLIP_FABtx" status)" -eq 0 && exit 1
@@ -63,8 +63,8 @@ JUG_FAB=$(seth receipt "$JUG_FABtx" contractAddress)
 VOW_FAB=$(seth receipt "$VOW_FABtx" contractAddress)
 CAT_FAB=$(seth receipt "$CAT_FABtx" contractAddress)
 DOG_FAB=$(seth receipt "$DOG_FABtx" contractAddress)
-DAI_FAB=$(seth receipt "$DAI_FABtx" contractAddress)
-MCD_JOIN_DAI_FAB=$(seth receipt "$MCD_JOIN_DAI_FABtx" contractAddress)
+USDV_FAB=$(seth receipt "$USDV_FABtx" contractAddress)
+MCD_JOIN_USDV_FAB=$(seth receipt "$MCD_JOIN_USDV_FABtx" contractAddress)
 FLAP_FAB=$(seth receipt "$FLAP_FABtx" contractAddress)
 FLOP_FAB=$(seth receipt "$FLOP_FABtx" contractAddress)
 FLIP_FAB=$(seth receipt "$FLIP_FABtx" contractAddress)
@@ -81,8 +81,8 @@ logAddr "JUG_FAB" "$JUG_FAB"
 logAddr "VOW_FAB" "$VOW_FAB"
 logAddr "CAT_FAB" "$CAT_FAB"
 logAddr "DOG_FAB" "$DOG_FAB"
-logAddr "DAI_FAB" "$DAI_FAB"
-logAddr "MCD_JOIN_DAI_FAB" "$MCD_JOIN_DAI_FAB"
+logAddr "USDV_FAB" "$USDV_FAB"
+logAddr "MCD_JOIN_USDV_FAB" "$MCD_JOIN_USDV_FAB"
 logAddr "FLAP_FAB" "$FLAP_FAB"
 logAddr "FLOP_FAB" "$FLOP_FAB"
 logAddr "FLIP_FAB" "$FLIP_FAB"
@@ -101,8 +101,8 @@ export JUG_FAB=$JUG_FAB
 export VOW_FAB=$VOW_FAB
 export CAT_FAB=$CAT_FAB
 export DOG_FAB=$DOG_FAB
-export DAI_FAB=$DAI_FAB
-export MCD_JOIN_DAI_FAB=$MCD_JOIN_DAI_FAB
+export USDV_FAB=$USDV_FAB
+export MCD_JOIN_USDV_FAB=$MCD_JOIN_USDV_FAB
 export FLAP_FAB=$FLAP_FAB
 export FLOP_FAB=$FLOP_FAB
 export FLIP_FAB=$FLIP_FAB
