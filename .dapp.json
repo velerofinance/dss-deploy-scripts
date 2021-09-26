@@ -291,16 +291,16 @@
         "url": "https://github.com/velerofinance/dss-deploy"
       }
     },
-    "dss-flash_e26b764": {
+    "dss-flash_8223986": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
         "dss": "dss_f6dd78f"
       },
       "name": "dss-flash",
       "repo": {
-        "name": "dss-flash-671be9c",
+        "name": "dss-flash-8223986",
         "ref": "HEAD",
-        "rev": "e26b7644038b48cc2269ede329ed2b1af0f0f5b2",
+        "rev": "8223986ed59754620275782ba682dcba294d91c0",
         "url": "https://github.com/velerofinance/dss-flash"
       }
     },
@@ -593,7 +593,7 @@
       "dss-deploy": "dss-deploy_541d81d",
       "dss-deploy-1_2": "dss-deploy_f41d914",
       "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_5366d3a",
-      "dss-flash": "dss-flash_e26b764",
+      "dss-flash": "dss-flash_8223986",
       "dss-gem-joins": "dss-gem-joins_cd0f255",
       "dss-proxy-actions": "dss-proxy-actions_2ec0e49",
       "dss-vest": "dss-vest_76bdc7f",
