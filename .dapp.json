@@ -169,23 +169,23 @@
         "url": "https://github.com/velerofinance/ds-value"
       }
     },
-    "ds-weth_85e964f": {
+    "ds-weth_8b6d686": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
         "erc20": "erc20_f322aac"
       },
       "name": "ds-weth",
       "repo": {
-        "name": "ds-weth-85e964f",
+        "name": "ds-weth-8b6d686",
         "ref": "HEAD",
-        "rev": "85e964fbe3a004ff4a01fb9a74fd3c6464ac8da3",
+        "rev": "8b6d686227fecad3168a6e876e6d337b0659607f",
         "url": "https://github.com/velerofinance/ds-weth"
       }
     },
     "dsr-manager_704de7f": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_8b6d2c1"
+        "dss-deploy": "dss-deploy_82a28c1"
       },
       "name": "dsr-manager",
       "repo": {
@@ -223,7 +223,7 @@
     "dss-cdp-manager_23ea78b": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_8b6d2c1"
+        "dss-deploy": "dss-deploy_82a28c1"
       },
       "name": "dss-cdp-manager",
       "repo": {
@@ -249,7 +249,7 @@
       "deps": {
         "ds-proxy": "ds-proxy_e17a252",
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_8b6d2c1"
+        "dss-deploy": "dss-deploy_82a28c1"
       },
       "name": "dss-deploy-pause-proxy-actions",
       "repo": {
@@ -275,7 +275,7 @@
         "url": "https://github.com/velerofinance/dss-deploy"
       }
     },
-    "dss-deploy_8b6d2c1": {
+    "dss-deploy_82a28c1": {
       "deps": {
         "ds-auth": "ds-auth_1cd1fb0",
         "ds-pause": "ds-pause_a520e36",
@@ -285,9 +285,9 @@
       },
       "name": "dss-deploy",
       "repo": {
-        "name": "dss-deploy-8b6d2c1",
+        "name": "dss-deploy-82a28c1",
         "ref": "v1.2",
-        "rev": "8b6d2c19440f7cf6ca0e16818b647da432f2e676",
+        "rev": "82a28c12594f41246bc43a265f80aa8517ef6bcc",
         "url": "https://github.com/velerofinance/dss-deploy"
       }
     },
@@ -307,7 +307,7 @@
     "dss-gem-joins_cd0f255": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_8b6d2c1"
+        "dss-deploy": "dss-deploy_82a28c1"
       },
       "name": "dss-gem-joins",
       "repo": {
@@ -318,19 +318,19 @@
         "url": "https://github.com/velerofinance/dss-gem-joins"
       }
     },
-    "dss-proxy-actions_2ec0e49": {
+    "dss-proxy-actions_ee63031": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "ds-weth": "ds-weth_85e964f",
+        "ds-weth": "ds-weth_8b6d686",
         "dss-cdp-manager": "dss-cdp-manager_23ea78b",
         "dss-gem-joins": "dss-gem-joins_cd0f255",
         "proxy-registry": "proxy-registry_235fec6"
       },
       "name": "dss-proxy-actions",
       "repo": {
-        "name": "dss-proxy-actions-2ec0e49",
+        "name": "dss-proxy-actions-ee63031",
         "ref": "HEAD",
-        "rev": "2ec0e49322a84df61b51aff8ba506277d0e093c8",
+        "rev": "ee63031cfeb6ecb7e70c37785068e9e5d2ff195a",
         "url": "https://github.com/velerofinance/dss-proxy-actions"
       }
     },
@@ -585,17 +585,17 @@
       "ds-roles": "ds-roles_288cb22",
       "ds-token": "ds-token_6c5cdfb",
       "ds-value": "ds-value_4049ecd",
-      "ds-weth": "ds-weth_85e964f",
+      "ds-weth": "ds-weth_8b6d686",
       "dsr-manager": "dsr-manager_704de7f",
       "dss-auto-line": "dss-auto-line_772e08e",
       "dss-cdp-manager": "dss-cdp-manager_23ea78b",
       "dss-chain-log": "dss-chain-log_56422f3",
       "dss-deploy": "dss-deploy_e3d7673",
-      "dss-deploy-1_2": "dss-deploy_8b6d2c1",
+      "dss-deploy-1_2": "dss-deploy_82a28c1",
       "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_5366d3a",
       "dss-flash": "dss-flash_82a02f7",
       "dss-gem-joins": "dss-gem-joins_cd0f255",
-      "dss-proxy-actions": "dss-proxy-actions_2ec0e49",
+      "dss-proxy-actions": "dss-proxy-actions_ee63031",
       "dss-vest": "dss-vest_76bdc7f",
       "flipper-mom": "flipper-mom_a841b5e",
       "ilk-registry": "ilk-registry_bde10a0",
