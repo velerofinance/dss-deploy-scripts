@@ -185,7 +185,7 @@
     "dsr-manager_704de7f": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_541d81d"
+        "dss-deploy": "dss-deploy_8b6d2c1"
       },
       "name": "dsr-manager",
       "repo": {
@@ -223,7 +223,7 @@
     "dss-cdp-manager_fd94a3f": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_f41d914"
+        "dss-deploy": "dss-deploy_8b6d2c1"
       },
       "name": "dss-cdp-manager",
       "repo": {
@@ -249,7 +249,7 @@
       "deps": {
         "ds-proxy": "ds-proxy_e17a252",
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_541d81d"
+        "dss-deploy": "dss-deploy_8b6d2c1"
       },
       "name": "dss-deploy-pause-proxy-actions",
       "repo": {
@@ -275,7 +275,7 @@
         "url": "https://github.com/velerofinance/dss-deploy"
       }
     },
-    "dss-deploy_f41d914": {
+    "dss-deploy_8b6d2c1": {
       "deps": {
         "ds-auth": "ds-auth_1cd1fb0",
         "ds-pause": "ds-pause_a520e36",
@@ -285,9 +285,9 @@
       },
       "name": "dss-deploy",
       "repo": {
-        "name": "dss-deploy-f41d914",
+        "name": "dss-deploy-8b6d2c1",
         "ref": "v1.2",
-        "rev": "f41d9140d876767ce984d5716e685e6f55d24d2d",
+        "rev": "8b6d2c19440f7cf6ca0e16818b647da432f2e676",
         "url": "https://github.com/velerofinance/dss-deploy"
       }
     },
@@ -307,7 +307,7 @@
     "dss-gem-joins_cd0f255": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
-        "dss-deploy": "dss-deploy_541d81d"
+        "dss-deploy": "dss-deploy_8b6d2c1"
       },
       "name": "dss-gem-joins",
       "repo": {
@@ -322,7 +322,7 @@
       "deps": {
         "ds-test": "ds-test_0a5da56",
         "ds-weth": "ds-weth_85e964f",
-        "dss-cdp-manager": "dss-cdp-manager_f98f641",
+        "dss-cdp-manager": "dss-cdp-manager_fd94a3f",
         "dss-gem-joins": "dss-gem-joins_cd0f255",
         "proxy-registry": "proxy-registry_235fec6"
       },
@@ -579,6 +579,7 @@
   },
   "this": {
     "deps": {
+      "dss": "dss_f6dd78f",
       "clipper-mom": "clipper-mom_e4c3e64",
       "ds-chief": "ds-chief_4f5ca80",
       "ds-proxy": "ds-proxy_e17a252",
@@ -588,10 +589,10 @@
       "ds-weth": "ds-weth_85e964f",
       "dsr-manager": "dsr-manager_704de7f",
       "dss-auto-line": "dss-auto-line_772e08e",
-      "dss-cdp-manager": "dss-cdp-manager_f98f641",
+      "dss-cdp-manager": "dss-cdp-manager_fd94a3f",
       "dss-chain-log": "dss-chain-log_56422f3",
       "dss-deploy": "dss-deploy_541d81d",
-      "dss-deploy-1_2": "dss-deploy_f41d914",
+      "dss-deploy-1_2": "dss-deploy_8b6d2c1",
       "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_5366d3a",
       "dss-flash": "dss-flash_82a02f7",
       "dss-gem-joins": "dss-gem-joins_cd0f255",
