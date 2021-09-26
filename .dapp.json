@@ -291,16 +291,16 @@
         "url": "https://github.com/velerofinance/dss-deploy"
       }
     },
-    "dss-flash_8223986": {
+    "dss-flash_ea1814a": {
       "deps": {
         "ds-test": "ds-test_0a5da56",
         "dss": "dss_f6dd78f"
       },
       "name": "dss-flash",
       "repo": {
-        "name": "dss-flash-8223986",
+        "name": "dss-flash-ea1814a",
         "ref": "HEAD",
-        "rev": "8223986ed59754620275782ba682dcba294d91c0",
+        "rev": "ea1814afd723ea1ede9a61d05b751f2203572994",
         "url": "https://github.com/velerofinance/dss-flash"
       }
     },
@@ -449,15 +449,15 @@
         "url": "https://github.com/velerofinance/median"
       }
     },
-    "mkr-authority_73ae327": {
+    "mkr-authority_217826f": {
       "deps": {
         "ds-test": "ds-test_0a5da56"
       },
       "name": "mkr-authority",
       "repo": {
-        "name": "mkr-authority-73ae327",
+        "name": "mkr-authority-217826f",
         "ref": "HEAD",
-        "rev": "73ae3276dbc5120b2dac02aa71d3992342499c95",
+        "rev": "217826fea7e6a2e849d7936d3e086e7cdc552769",
         "url": "https://github.com/velerofinance/mkr-authority"
       }
     },
@@ -593,13 +593,13 @@
       "dss-deploy": "dss-deploy_541d81d",
       "dss-deploy-1_2": "dss-deploy_f41d914",
       "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_5366d3a",
-      "dss-flash": "dss-flash_8223986",
+      "dss-flash": "dss-flash_ea1814a",
       "dss-gem-joins": "dss-gem-joins_cd0f255",
       "dss-proxy-actions": "dss-proxy-actions_2ec0e49",
       "dss-vest": "dss-vest_76bdc7f",
       "flipper-mom": "flipper-mom_a841b5e",
       "ilk-registry": "ilk-registry_bde10a0",
-      "mkr-authority": "mkr-authority_73ae327",
+      "mkr-authority": "mkr-authority_217826f",
       "multicall": "multicall_61068b8",
       "osm": "osm_0c21b15",
       "osm-mom": "osm-mom_937a540",
