@@ -38,7 +38,8 @@
       "pipDeploy": {
         "osmDelay": "0",
         "price": "0.139567",
-        "type": "value"
+        "type": "median",
+	"signers": ["0xc0ccab7430aec0c30e76e1da596263c3bdd82932"]
       },
       "ilks": {
         "A": {

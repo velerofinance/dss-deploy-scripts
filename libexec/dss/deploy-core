@@ -38,33 +38,42 @@ then
     MCD_ADM=$(dappCreate ds-roles DSRoles)
     logAddr "MCD_ADM" "$MCD_ADM"
     sethSend "$MCD_ADM" 'setRootUser(address,bool)' "$ETH_FROM" true
+    sleep 20s
 fi
 
 # Deploy VAT
 sethSend "$MCD_DEPLOY" "deployVat()"
+sleep 20s
 
 # Deploy MCD
 sethSend "$MCD_DEPLOY" "deployUsdv(uint256)" "$(seth rpc net_version)"
+sleep 20s
 
 # Deploy Taxation
 sethSend "$MCD_DEPLOY" "deployTaxation()"
+sleep 20s
 
 # Deploy Auctions
 sethSend "$MCD_DEPLOY" "deployAuctions(address)" "$MCD_GOV"
+sleep 20s
 
 # Deploy Liquidation
 sethSend "$MCD_DEPLOY" "deployLiquidator()"
+sleep 20s
 
 # Deploy End
 sethSend "$MCD_DEPLOY" "deployEnd()"
+sleep 20s
 
 # Deploy pause
 MCD_PAUSE_DELAY=${MCD_PAUSE_DELAY:-"3600"}
 sethSend "$MCD_DEPLOY" "deployPause(uint256,address)" "$(seth --to-uint256 "$MCD_PAUSE_DELAY")" "$MCD_ADM"
+sleep 20s
 
 # Deploy ESM
 MCD_ESM_MIN=${MCD_ESM_MIN:-"$(seth --to-uint256 "$(seth --to-wei 50000 "eth")")"}
 sethSend "$MCD_DEPLOY" "deployESM(address,uint256)" "$MCD_GOV" "$MCD_ESM_MIN"
+sleep 20s
 
 # Get addresses from Deploy contract
 MCD_VAT="$(seth call "$MCD_DEPLOY" "vat()(address)")"

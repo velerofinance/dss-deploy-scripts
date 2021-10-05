@@ -21,22 +21,39 @@
 export SETH_ASYNC=yes
 
 VAT_FABtx=$(dappCreate dss-deploy-1_2 VatFab)
+sleep 20s
 JUG_FABtx=$(dappCreate dss-deploy-1_2 JugFab)
+sleep 20s
 VOW_FABtx=$(dappCreate dss-deploy-1_2 VowFab)
+sleep 20s
 CAT_FABtx=$(dappCreate dss-deploy-1_2 CatFab)
+sleep 20s
 DOG_FABtx=$(dappCreate dss-deploy DogFab)
+sleep 20s
 USDV_FABtx=$(dappCreate dss-deploy-1_2 USDVFab)
+sleep 20s
 MCD_JOIN_USDV_FABtx=$(dappCreate dss-deploy-1_2 UsdvJoinFab)
+sleep 20s
 FLAP_FABtx=$(dappCreate dss-deploy-1_2 FlapFab)
+sleep 20s
 FLOP_FABtx=$(dappCreate dss-deploy-1_2 FlopFab)
+sleep 20s
 FLIP_FABtx=$(dappCreate dss-deploy-1_2 FlipFab)
+sleep 20s
 CLIP_FABtx=$(dappCreate dss-deploy ClipFab)
+sleep 20s
 CALC_FABtx=$(dappCreate dss-deploy CalcFab)
+sleep 20s
 SPOT_FABtx=$(dappCreate dss-deploy-1_2 SpotFab)
+sleep 20s
 POT_FABtx=$(dappCreate dss-deploy-1_2 PotFab)
+sleep 20s
 END_FABtx=$(dappCreate dss-deploy EndFab)
+sleep 20s
 ESM_FABtx=$(dappCreate dss-deploy ESMFab)
+sleep 20s
 PAUSE_FABtx=$(dappCreate dss-deploy-1_2 PauseFab)
+sleep 20s
 
 export SETH_ASYNC=no
 
