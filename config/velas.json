@@ -37,8 +37,8 @@
       },
       "pipDeploy": {
         "osmDelay": "0",
-        "type": "value",
-        "price": "150"
+        "price": "0.139567",
+        "type": "value"
       },
       "ilks": {
         "A": {
@@ -64,8 +64,8 @@
             },
             "cm_tolerance": "50"
           }
-        }
+        } 
       }
-    }
+    }   
   }
 }

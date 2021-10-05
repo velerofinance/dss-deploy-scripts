@@ -28,8 +28,10 @@ help() {
 test -z "$1" && echo "Missing network" && help
 
 RPC_CHAIN="$(seth chain)"
-if [[ "$RPC_CHAIN" == "unknown" ]]; then
+if [[ "$RPC_CHAIN" == "unknown" && "$1" != "velas" ]]; then
     RPC_CHAIN="testchain"
+elif [[ "$RPC_CHAIN" == "unknown" && "$1" == "velas" ]]; then
+    RPC_CHAIN="velas"
 elif [[ "$RPC_CHAIN" == "ethlive" ]]; then
     RPC_CHAIN="main"
 fi
