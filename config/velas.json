@@ -39,7 +39,7 @@
         "osmDelay": "600",
         "price": "0.139567",
         "type": "median",
-	"signers": ["0xc0ccab7430aec0c30e76e1da596263c3bdd82932"]
+	    "signers": ["0x02684a58a1e64094bF2066b63bfa6E48e5b1c71E"]
       },
       "ilks": {
         "A": {
