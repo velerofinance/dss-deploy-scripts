@@ -21,7 +21,7 @@
 # If no Governance token is defined, create one
 if [ -z "$MCD_GOV" ]
 then
-    MCD_GOV=$(dappCreate ds-token DSToken '"MKR"')
+    MCD_GOV=$(dappCreate ds-token DSToken '"VDGT"')
     logAddr "MCD_GOV" "$MCD_GOV"
 fi
 
@@ -29,7 +29,7 @@ fi
 MCD_DEPLOY=$(dappCreate dss-deploy-optimized-runs-1 DssDeploy)
 logAddr "MCD_DEPLOY" "$MCD_DEPLOY"
 
-sethSend "$MCD_DEPLOY" "addFabs1(address,address,address,address,address,address,address)" "$VAT_FAB" "$JUG_FAB" "$VOW_FAB" "$CAT_FAB" "$DOG_FAB" "$DAI_FAB" "$MCD_JOIN_DAI_FAB"
+sethSend "$MCD_DEPLOY" "addFabs1(address,address,address,address,address,address,address)" "$VAT_FAB" "$JUG_FAB" "$VOW_FAB" "$CAT_FAB" "$DOG_FAB" "$USDV_FAB" "$MCD_JOIN_USDV_FAB"
 sethSend "$MCD_DEPLOY" "addFabs2(address,address,address,address,address,address,address,address,address,address)" "$FLAP_FAB" "$FLOP_FAB" "$FLIP_FAB" "$CLIP_FAB" "$CALC_FAB" "$SPOT_FAB" "$POT_FAB" "$END_FAB" "$ESM_FAB" "$PAUSE_FAB"
 
 # If no Authority is defined, create one
@@ -44,7 +44,7 @@ fi
 sethSend "$MCD_DEPLOY" "deployVat()"
 
 # Deploy MCD
-sethSend "$MCD_DEPLOY" "deployDai(uint256)" "$(seth rpc net_version)"
+sethSend "$MCD_DEPLOY" "deployUsdv(uint256)" "$(seth rpc net_version)"
 
 # Deploy Taxation
 sethSend "$MCD_DEPLOY" "deployTaxation()"
@@ -72,7 +72,7 @@ MCD_JUG="$(seth call "$MCD_DEPLOY" "jug()(address)")"
 MCD_CAT="$(seth call "$MCD_DEPLOY" "cat()(address)")"
 MCD_DOG="$(seth call "$MCD_DEPLOY" "dog()(address)")"
 MCD_VOW="$(seth call "$MCD_DEPLOY" "vow()(address)")"
-MCD_JOIN_DAI="$(seth call "$MCD_DEPLOY" "daiJoin()(address)")"
+MCD_JOIN_USDV="$(seth call "$MCD_DEPLOY" "usdvJoin()(address)")"
 MCD_FLAP="$(seth call "$MCD_DEPLOY" "flap()(address)")"
 MCD_FLOP="$(seth call "$MCD_DEPLOY" "flop()(address)")"
 MCD_SPOT="$(seth call "$MCD_DEPLOY" "spotter()(address)")"
@@ -81,14 +81,14 @@ MCD_END="$(seth call "$MCD_DEPLOY" "end()(address)")"
 MCD_ESM="$(seth call "$MCD_DEPLOY" "esm()(address)")"
 MCD_PAUSE="$(seth call "$MCD_DEPLOY" "pause()(address)")"
 MCD_PAUSE_PROXY="$(seth call "$(seth call "$MCD_DEPLOY" "pause()(address)")" "proxy()(address)")"
-MCD_DAI="$(seth call "$MCD_DEPLOY" "dai()(address)")"
+MCD_USDV="$(seth call "$MCD_DEPLOY" "usdv()(address)")"
 
 logAddr "MCD_VAT" "$MCD_VAT"
 logAddr "MCD_JUG" "$MCD_JUG"
 logAddr "MCD_CAT" "$MCD_CAT"
 logAddr "MCD_DOG" "$MCD_DOG"
 logAddr "MCD_VOW" "$MCD_VOW"
-logAddr "MCD_JOIN_DAI" "$MCD_JOIN_DAI"
+logAddr "MCD_JOIN_USDV" "$MCD_JOIN_USDV"
 logAddr "MCD_FLAP" "$MCD_FLAP"
 logAddr "MCD_FLOP" "$MCD_FLOP"
 logAddr "MCD_SPOT" "$MCD_SPOT"
@@ -97,7 +97,7 @@ logAddr "MCD_END" "$MCD_END"
 logAddr "MCD_ESM" "$MCD_ESM"
 logAddr "MCD_PAUSE" "$MCD_PAUSE"
 logAddr "MCD_PAUSE_PROXY" "$MCD_PAUSE_PROXY"
-logAddr "MCD_DAI" "$MCD_DAI"
+logAddr "MCD_USDV" "$MCD_USDV"
 
 cat > "$OUT_DIR/load-core-addr-temp" << EOF
 #!/bin/bash
@@ -109,7 +109,7 @@ export MCD_JUG=$MCD_JUG
 export MCD_CAT=$MCD_CAT
 export MCD_DOG=$MCD_DOG
 export MCD_VOW=$MCD_VOW
-export MCD_JOIN_DAI=$MCD_JOIN_DAI
+export MCD_JOIN_USDV=$MCD_JOIN_USDV
 export MCD_FLAP=$MCD_FLAP
 export MCD_FLOP=$MCD_FLOP
 export MCD_SPOT=$MCD_SPOT
@@ -118,5 +118,5 @@ export MCD_END=$MCD_END
 export MCD_ESM=$MCD_ESM
 export MCD_PAUSE=$MCD_PAUSE
 export MCD_PAUSE_PROXY=$MCD_PAUSE_PROXY
-export MCD_DAI=$MCD_DAI
+export MCD_USDV=$MCD_USDV
 EOF

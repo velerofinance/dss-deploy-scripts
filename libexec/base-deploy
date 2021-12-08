@@ -49,7 +49,7 @@ for token in $tokens; do
             done
             sethSend "$(eval echo "\$VAL_${token}")" 'lift(address[] memory)' "[$(join "${allsigners[@]}")]"
             # Set quorum for Medianizer
-            sethSend "$(eval echo "\$VAL_${token}")" 'setBar(uint256)' "$(seth --to-uint256 3)"
+            sethSend "$(eval echo "\$VAL_${token}")" 'setBar(uint256)' "$(seth --to-uint256 1)"
         fi
         # Deploy DSValue as Feed
         if [[ "${type}" == "value" ]]; then
@@ -127,11 +127,11 @@ rm "$OUT_DIR/load-core-addr-temp"
 
 # Mint Gov Token, send to the Faucet and set permissions if a new token
 if [[ "$newGovToken" == true ]]; then
-    sethSend "$MCD_GOV" 'mint(address,uint256)' "$ETH_FROM" "$(seth --to-uint256 "$(seth --to-wei 1000000 ETH)")"
+    sethSend "$MCD_GOV" 'mint(address,uint256)' "$ETH_FROM" "$(seth --to-uint256 "$(seth --to-wei 1000000000 ETH)")"
     # sethSend "$FAUCET" 'gulp(address)' "$MCD_GOV"
 
     # Use custom authority for the new GOV token
-    GOV_GUARD=$(dappCreate mkr-authority MkrAuthority)
+    GOV_GUARD=$(dappCreate mkr-authority VdgtAuthority)
     logAddr "GOV_GUARD" "$GOV_GUARD"
 
     # Set GOV_GUARD as authority of MCD_GOV
@@ -168,7 +168,7 @@ GET_CDPS=$(dappCreate dss-cdp-manager GetCdps)
 logAddr "GET_CDPS" "$GET_CDPS"
 
 # Deploy DsrManager
-DSR_MANAGER=$(dappCreate dsr-manager DsrManager "$MCD_POT" "$MCD_JOIN_DAI")
+DSR_MANAGER=$(dappCreate dsr-manager DsrManager "$MCD_POT" "$MCD_JOIN_USDV")
 logAddr "DSR_MANAGER" "$DSR_MANAGER"
 
 # Deploy OsmMom
@@ -308,7 +308,7 @@ calldata="$(seth calldata 'rely(address,address,address,address)' "$MCD_PAUSE" "
 sethSend "$PROXY_DEPLOYER" 'execute(address,bytes memory)' "$PROXY_PAUSE_ACTIONS" "$calldata"
 
 # Deploy DssFlash
-MCD_FLASH=$(dappCreate dss-flash DssFlash "$MCD_JOIN_DAI" "$MCD_VOW")
+MCD_FLASH=$(dappCreate dss-flash DssFlash "$MCD_JOIN_USDV" "$MCD_VOW")
 logAddr "MCD_FLASH" "$MCD_FLASH"
 # Rely DssFlash in the Vat
 set -e
@@ -319,18 +319,18 @@ sethSend "$MCD_FLASH" 'rely(address)' "$MCD_PAUSE_PROXY"
 sethSend "$MCD_FLASH" 'deny(address)' "$ETH_FROM"
 
 # Deploy both DssVest
-MCD_VEST_DAI=$(dappCreate dss-vest-optimized DssVestSuckable "$CHANGELOG")
-logAddr "MCD_VEST_DAI" "$MCD_VEST_DAI"
-sethSend "$MCD_VEST_DAI" 'rely(address)' "$MCD_PAUSE_PROXY"
-sethSend "$MCD_VEST_DAI" 'deny(address)' "$ETH_FROM"
-calldata="$(seth calldata 'rely(address,address,address,address)' "$MCD_PAUSE" "$MCD_GOV_ACTIONS" "$MCD_VAT" "$MCD_VEST_DAI")"
+MCD_VEST_USDV=$(dappCreate dss-vest-optimized DssVestSuckable "$CHANGELOG")
+logAddr "MCD_VEST_USDV" "$MCD_VEST_USDV"
+sethSend "$MCD_VEST_USDV" 'rely(address)' "$MCD_PAUSE_PROXY"
+sethSend "$MCD_VEST_USDV" 'deny(address)' "$ETH_FROM"
+calldata="$(seth calldata 'rely(address,address,address,address)' "$MCD_PAUSE" "$MCD_GOV_ACTIONS" "$MCD_VAT" "$MCD_VEST_USDV")"
 sethSend "$PROXY_DEPLOYER" 'execute(address,bytes memory)' "$PROXY_PAUSE_ACTIONS" "$calldata"
-MCD_VEST_MKR=$(dappCreate dss-vest-optimized DssVestMintable "$MCD_GOV")
-logAddr "MCD_VEST_MKR" "$MCD_VEST_MKR"
-sethSend "$MCD_VEST_MKR" 'rely(address)' "$MCD_PAUSE_PROXY"
-sethSend "$MCD_VEST_MKR" 'deny(address)' "$ETH_FROM"
+MCD_VEST_VDGT=$(dappCreate dss-vest-optimized DssVestMintable "$MCD_GOV")
+logAddr "MCD_VEST_VDGT" "$MCD_VEST_VDGT"
+sethSend "$MCD_VEST_VDGT" 'rely(address)' "$MCD_PAUSE_PROXY"
+sethSend "$MCD_VEST_VDGT" 'deny(address)' "$ETH_FROM"
 if [[ "$newGovToken" == true ]]; then
-    calldata="$(seth calldata 'rely(address,address,address,address)' "$MCD_PAUSE" "$MCD_GOV_ACTIONS" "$GOV_GUARD" "$MCD_VEST_MKR")"
+    calldata="$(seth calldata 'rely(address,address,address,address)' "$MCD_PAUSE" "$MCD_GOV_ACTIONS" "$GOV_GUARD" "$MCD_VEST_VDGT")"
     sethSend "$PROXY_DEPLOYER" 'execute(address,bytes memory)' "$PROXY_PAUSE_ACTIONS" "$calldata"
 fi
 
@@ -353,13 +353,13 @@ cat > "$OUT_DIR"/addresses.json <<EOF
     "MCD_CAT": "$(seth --to-checksum-address "$MCD_CAT")",
     "MCD_DOG": "$(seth --to-checksum-address "$MCD_DOG")",
     "MCD_VOW": "$(seth --to-checksum-address "$MCD_VOW")",
-    "MCD_JOIN_DAI": "$(seth --to-checksum-address "$MCD_JOIN_DAI")",
+    "MCD_JOIN_USDV": "$(seth --to-checksum-address "$MCD_JOIN_USDV")",
     "MCD_FLAP": "$(seth --to-checksum-address "$MCD_FLAP")",
     "MCD_FLOP": "$(seth --to-checksum-address "$MCD_FLOP")",
     "MCD_PAUSE": "$(seth --to-checksum-address "$MCD_PAUSE")",
     "MCD_PAUSE_PROXY": "$(seth --to-checksum-address "$MCD_PAUSE_PROXY")",
     "MCD_GOV_ACTIONS": "$MCD_GOV_ACTIONS",
-    "MCD_DAI": "$(seth --to-checksum-address "$MCD_DAI")",
+    "MCD_USDV": "$(seth --to-checksum-address "$MCD_USDV")",
     "MCD_SPOT": "$(seth --to-checksum-address "$MCD_SPOT")",
     "MCD_POT": "$(seth --to-checksum-address "$MCD_POT")",
     "MCD_END": "$(seth --to-checksum-address "$MCD_END")",
@@ -376,8 +376,8 @@ cat > "$OUT_DIR"/addresses.json <<EOF
     "CLIPPER_MOM": "$CLIPPER_MOM",
     "MCD_IAM_AUTO_LINE": "$MCD_IAM_AUTO_LINE",
     "MCD_FLASH": "$MCD_FLASH",
-    "MCD_VEST_DAI": "$MCD_VEST_DAI",
-    "MCD_VEST_MKR": "$MCD_VEST_MKR",
+    "MCD_VEST_USDV": "$MCD_VEST_USDV",
+    "MCD_VEST_VDGT": "$MCD_VEST_VDGT",
     "PROXY_FACTORY": "$(seth --to-checksum-address "$PROXY_FACTORY")",
     "PROXY_REGISTRY": "$(seth --to-checksum-address "$PROXY_REGISTRY")"$ILKS_VARS,
     "PROXY_PAUSE_ACTIONS": "$PROXY_PAUSE_ACTIONS",

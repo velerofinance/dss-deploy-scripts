@@ -36,9 +36,10 @@
         "extraParams": []
       },
       "pipDeploy": {
-        "osmDelay": "0",
-        "type": "value",
-        "price": "150"
+        "osmDelay": "600",
+        "price": "0.139567",
+        "type": "median",
+	    "signers": ["0x02684a58a1e64094bF2066b63bfa6E48e5b1c71E"]
       },
       "ilks": {
         "A": {
@@ -64,8 +65,8 @@
             },
             "cm_tolerance": "50"
           }
-        }
+        } 
       }
-    }
+    }   
   }
 }
